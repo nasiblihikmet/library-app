@@ -1,0 +1,201 @@
+@import "./root.css";
+@import "./header.css";
+@import "./footer.css";
+
+body {
+    background-color: var(--mainBodyColor);
+    font-family: var(--fontMons);
+}
+main {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 98px;
+}
+
+/* LOADER */
+.loader-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 200px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid;
+    border-color: #000 #0000;
+    animation: l1 1s infinite;
+}
+@keyframes l1 {
+    to {
+        transform: rotate(0.5turn);
+    }
+}
+
+.btn-back {
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 12px;
+    background-color: var(--mainColorOrange);
+    border: none;
+    color: #ffff;
+    padding: 10px 0 10px 40px;
+    padding-right: 30px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-left: 74px;
+}
+
+.year-book {
+    font-weight: 900;
+    font-size: 12px;
+    background-color: #2f80ed;
+    color: #ffff;
+    width: 70px;
+    height: 26px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 4px;
+}
+
+.book-name {
+    color: var(--mainColorText);
+    font-weight: 700;
+    font-size: 35px;
+}
+.history-add {
+    color: var(--mainColorText);
+    font-weight: 700;
+    font-size: 16px;
+}
+.author-name {
+    color: var(--mainColorText);
+    font-weight: 400;
+    font-size: 22px;
+}
+.book-title {
+    color: var(--mainColorText);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35.31px;
+}
+
+.section1-content {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+    margin-block: 4rem;
+}
+.img-container {
+    width: 30%;
+    text-align: center;
+}
+.img-container img {
+    width: 100%;
+}
+
+/* SECTION-2 */
+.section-2 {
+    width: 50%;
+    margin: 0 0 80px 77px;
+}
+
+.input-comment {
+    flex: 1;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 4px;
+    padding-left: 30px;
+    font-family: var(--fontRoboto);
+}
+
+input::placeholder {
+    font-family: var(--fontRoboto);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #232323;
+}
+
+.send-icon {
+    background-color: var(--mainColorOrange);
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 16px;
+}
+.send {
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    font-weight: 500;
+}
+
+.anonim-comments .comm1 {
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-color: #ffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-direction: column;
+    padding: 28px 18px;
+    margin-bottom: 43px;
+}
+
+.user1-info p {
+    color: #241400;
+    font-family: var(--fontRoboto);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.comm1 p {
+    color: #241400;
+    font-family: var(--fontRoboto);
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section-2-design {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+    .section1-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .description,
+    .img-container {
+        width: 100%;
+        text-align: center;
+    }
+    .img-container img {
+        width: 80%;
+        margin-top: 2rem;
+        object-fit: cover;
+    }
+    .section-2 {
+        display: none;
+    }
+}

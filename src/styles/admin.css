@@ -1,0 +1,311 @@
+@import "./root.css";
+@import "./checkbox.css";
+
+/* Login */
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--fontMons);
+    background-color: var(--mainBodyColor);
+}
+button:hover {
+    opacity: 0.8;
+}
+p {
+    margin-bottom: 0
+}
+
+.admin-login {
+    background-color: var(--mainColorRed);
+    min-height: 100vh;
+    padding-bottom: 10px;
+}
+
+.admin-login .logo {
+    margin: 75px 0 0 35px;
+}
+
+.login-container {
+    padding: 70px 54px 34px 54px;
+    margin: 120px auto;
+    background-color: #fff;
+    max-width: 544px;
+    font-size: 19px;
+}
+.login-container_title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    font-family: "Crimson Text", serif;
+}
+.login-form input {
+    border: 1px solid #cecece;
+    padding: 18px 51px;
+}
+
+.login-form_btn {
+    font-weight: 700;
+    background-color: var(--mainColorOrange);
+    color: #fff;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+/* Admin Panel */
+
+.desk-menu-container {
+    background-color: var(--mainColorRed);
+    color: #fff;
+    padding: 90px 35px;
+    min-width: 250px;
+}
+.admin-panel .logo {
+    width: 280px;
+}
+.desktop-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-top: 24px;
+    padding: 0;
+    position: sticky;
+    top: 0;
+}
+.desktop-menu li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.5s;
+}
+.desktop-menu li:hover {
+    transform: scale(1.1);
+}
+.desktop-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+main {
+    padding-inline: 34px;
+}
+.admin-header {
+    padding: 65px 85px 0 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Search book */
+.section-title {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.section-subtitle {
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-family: var(--fontMons);
+    font-weight: 600;
+}
+.search-block {
+    margin-bottom: 2rem;
+    position: relative;
+    font-family: "Preahvihear", sans-serif;
+    font-size: 14px;
+}
+.search-block input {
+    border: 2px solid #391f007a;
+    border-radius: 34px;
+    background: #fff;
+    color: #adadad;
+    padding: 10px 30px;
+    width: 40%;
+    max-width: 395px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 34px;
+    background: var(--mainColorLightOrange);
+}
+.srcrslts {
+    border: none;
+}
+.search-results {
+    width: 50%;
+    max-height: 250px;
+    position: absolute;
+    top: 100%;
+    border-radius: 35px;
+    background: #f1f0f0;
+    color: #bcbcbc;
+    padding: 16px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.search-result {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.search-result:hover {
+    color: #000;
+}
+
+.search-result p {
+    margin: 0;
+    font-family: "Preahvihear", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: #bcbcbc;
+    text-align: left;
+}
+
+/* Book form */
+
+.book-form-container form {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 16px 30px 30px 30px;
+    font-family: var(--fontRoboto);
+    color: #030102;
+}
+.form-control:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+form input,
+form textarea,
+form select {
+    box-shadow: 0px 4px 18px 0px #9ea8bd4f;
+}
+
+.add-type button {
+    border: none;
+    background: none;
+}
+.add-type {
+    visibility: hidden;
+}
+.add-btn {
+    padding: 12px;
+    margin: 8px 0;
+    background: var(--mainColorLightOrange);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* About store */
+.about-section {
+    margin-block: 160px 130px;
+}
+
+/* Tables */
+table {
+    background-color: #fff;
+    font-family: Nunito Sans;
+    font-size: 14px;
+}
+thead {
+    background-color: var(--mainColorRed);
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+tr {
+    padding: 8px;
+    border-bottom: 2px solid #e5e5e5;
+}
+tr:nth-child(even) {
+    background-color: #f9fafc;
+}
+th,
+td {
+    padding: 16px 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.join-section {
+    margin-bottom: 136px;
+}
+
+/* Books section */
+.table-wrapper {
+    max-height: 300px;
+    display: inline-block;
+    overflow-y: auto;
+    margin-bottom: 100px;
+    scrollbar-width: none;
+}
+
+.book-table_img {
+    width: 27px;
+    height: 36px;
+}
+
+.fa-trash {
+    color: var(--mainColorRed);
+    margin-left: 4px;
+}
+
+/* Contact section */
+
+.contact-section {
+    margin-bottom: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .desk-menu-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .logo {
+        width: min(50%, 283px);
+        margin: 10px 0 0 15px;
+    }
+    .login-container {
+        margin: 95px auto;
+        width: 80%;
+        padding: 27px 18px;
+    }
+    .login-form {
+        gap: 22px;
+    }
+    .login-container_title {
+        margin: 12px 24px;
+        font-size: 1.25rem;
+    }
+    .login-form input {
+        padding: 12px;
+    }
+    .login-form_btn {
+        font-size: 1.125rem;
+        margin-top: unset;
+        padding: 10px 0;
+    }
+}

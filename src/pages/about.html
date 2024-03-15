@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Page</title>
+        
+        <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon" />
+        
+        <!-- Reset -->
+        <link rel="stylesheet" href="../styles/reset.css" />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="../styles/about.css" />
+    </head>
+
+    <body>
+        <header class="container" id="header">
+            <nav class="header-navbar">
+                <div class="header_navbar_brand">
+                    <img class="header_navbar_logo" src="../assets/images/logo1.svg" alt="" />
+                </div>
+
+                <ul class="header_nav">
+                    <li class="header_nav_item">
+                        <a href="../../index.html"> Home </a>
+                    </li>
+                    <li class="header_nav_item">
+                        <a href="./catalog.html"> Catalog </a>
+                    </li>
+                    <li class="header_nav_item active">
+                        <a href="./about.html"> About Store </a>
+                    </li>
+                    <li class="header_nav_item">
+                        <a href="./contact.html"> Contact Us </a>
+                    </li>
+                    <li class="header_nav_item">
+                        <a href="./search.html"> Search </a>
+                    </li>
+                </ul>
+
+                <div class="header_join">
+                    <button id="join-btn" class="header_join_btn">
+                        <img src="../assets/images/user.svg" alt="" />
+                        Join us
+                    </button>
+                </div>
+            </nav>
+            <div id="modal_body" class="modal-join">
+        
+                <div class="modal_main">
+                  <button type="button" id="rejectBtn" class="btn-close reject-btn" aria-label="Close"></button>
+                  <p class="modal_head_title">Join Us</p>
+                  <form class="modal_form" action="">
+                    <div class="modal_form_input_group">
+                      <input
+                      id="fullname_input"
+                        placeholder="Full name"
+                        class="modal_input"
+                        type="text"
+                      />
+                      <input id="email_input" placeholder="Email" class="modal_input" type="text" />
+                    </div>
+                    <button id="join_btn" class="modal_join_btn">Join</button>
+                  </form>
+                </div>
+              </div>
+        </header>
+
+        <main>
+            <div class="loader-container">
+                <div class="loader"></div>
+            </div>
+            <div class="about" id="aboutArea">
+            <!-- <div class="about_page">
+                <div class="about_paragraph" >
+                    <h1 class="about_title">About Store</h1>
+                    <p class="about_text">
+                        We work without holidays and weekends! Residents of Kiev can receive an order on the
+                        day of its registration. Customers from other cities of Ukraine can receive an order
+                        within 1-5 days, depending on the location of the settlement and the selected delivery
+                        method. Orders over UAH 1000 are delivered free of charge *. You can see the available
+                        methods, exact terms and cost of delivery during checkout in the order basket, after
+                        selecting the delivery city.
+                    </p>
+                </div>
+                <div class="about_img">
+                    <img src="../assets/images/3ayi.svg" alt="Mark Manson 3 Books" />
+                </div>
+            </div> -->
+        </div>
+            <section>
+                <div class="social-media">
+                    <p class="social-title">
+                      Follow us on social media
+                    </p>
+                    <div class="social-icons">
+                        <a>
+                          <img src="../assets/images/facebook.svg" alt="">
+                        </a>
+                        <a>
+                          <img src="../assets/images/twitter.svg" alt="">
+                        </a>
+                        <a>
+                          <img src="../assets/images/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="footer_logo">
+                    <img src="../assets/images/logo-white.svg" alt="" />
+                </div>
+                <div class="footer_nav">
+                    <ul class="footer_list">
+                        <p class="footer_title_item">Popular</p>
+                        <li class="footer_nav_item">
+                            <a href=""> Programming </a>
+                            <a href=""> Books For Children </a>
+                            <a href=""> Psychology </a>
+                            <a href=""> Business </a>
+                        </li>
+                    </ul>
+                    <ul class="footer_list">
+                        <p class="footer_title_item">Information</p>
+                        <li class="footer_nav_item">
+                            <a href=""> Delivery </a>
+                            <a href=""> Payment </a>
+                            <a href=""> About the store </a>
+                        </li>
+                    </ul>
+                    <ul class="footer_list">
+                        <p class="footer_title_item">Help</p>
+                        <li class="footer_nav_item">
+                            <a href=""> Contacts </a>
+                            <a href=""> Purchase returns </a>
+                            <a href=""> Buyer help </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer_title">All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy</p>
+        </footer>
+        <script type="module" src="../js/JoinUspage.js"></script>
+        <script type="module" src="../js/aboutpage.js"></script>
+    </body>
+</html>
